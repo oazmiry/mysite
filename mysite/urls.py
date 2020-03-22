@@ -19,8 +19,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    # TODO: Check what happens when sending a POST to a route to which  two routes are matching,  and only the second
-    #  one handles the POST verb.
     path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
 ]
